@@ -1,1 +1,432 @@
-[]
+[
+  {
+    "api": [
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {
+      "pip": "requests>=2.28.2,<3\npygments>=2.14.0,<3\nnetworkx>=3.0.0,<4\nintervaltree>=3.0.2,<4\ntorch>=2.2.2,<2.3.0\nsentence-transformers>=2.2.2,<3\nscikit-learn>=1.1.3,<2\npyjarowinkler>=1.8,<2\nmarkdown\nwatchdog\npydantic>=1.10,<2\n"
+    },
+    "description": "Binary Ninja Sidekick",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "Commercial",
+      "text": "This plugin is fully copyright Vector 35 Inc except as otherwise noted in the source. While source is distributed, no rights to the source are granted beyond those to submodules described <a href='https://docs.sidekick.binary.ninja/about/open-source/'>here</a>. Use of this plugin should be consistent with the terms of service available <a href='https://docs.sidekick.binary.ninja/about/legal-terms-and-conditions/'>here</a>."
+    },
+    "longdescription": "# Sidekick\r\n\r\nSidekick makes reversing easy. Sidekick is an extension to the BinaryNinja desktop application supported by an AI-powered service that provides new capabilities to help users analyze and understand binary programs.\r\n\r\nThe Sidekick plugin is currently available as an official plugin from the Binary Ninja plugin manager.  The plugin will not be fully functional without a Sidekick service plan. To purchase a Sidekick plan, you must have a Sidekick account. To sign up for a Sidekick account, click <a href='https://sidekick.binary.ninja/sign_in'>here</a>.\r\n\r\n# Features\r\n\r\n## Recover Structures\r\n\r\nWhen the code contains a lot of references to structures and fields, things can get rather cluttered with all of the dereferenced pointers, field offsets, and nesting going on. Let Sidekick clean up and simplify all that by automatically identifying and creating referenced structures through its sophisticated program analyses.\r\n\r\nBefore Structure Recovery\r\n\r\n![structure recovery before](https://sidekick.binary.ninja/static/images/features-structure-recovery-before.png?raw=true)\r\n\r\nAfter Structure Recovery\r\n\r\n![structure recovery after](https://sidekick.binary.ninja/static/images/features-structure-recovery-after.png?raw=true)\r\n\r\n## Generate Meaningful Names\r\n\r\nGood names convey meaning and help you immediately understand what something is. Without them, it takes valuable time to understand the code. Thankfully, Sidekick analyzes your code and automatically generates meaningful names for functions, structures, fields, and variables.\r\n\r\n![naming](https://sidekick.binary.ninja/static/images/features-naming.png?raw=true)\r\n\r\n## Summarize Code\r\n\r\nSometimes, the code you're looking at can be quite large and complex. Sidekick can help cut down on the time you spend figuring out the bigger picture by automatically summarizing entire functions with an informative comment. Also, when you're focusing on the finer details, Sidekick has you covered. It can quickly produce clear, descriptive inline comments that explain any logic you encounter.\r\n\r\n![comments](https://sidekick.binary.ninja/static/images/features-comments.png?raw=true)\r\n\r\n## Answer Your Questions\r\n\r\nDon't know something about the code? Delve deeper into analysis of the binary as you drive discussions with the Sidekick AI assistant that possesses a vast amount of knowledge and code reasoning capabilities useful for reversing.\r\n\r\n![assistant](https://sidekick.binary.ninja/static/images/features-assistant.png?raw=true)\r\n\r\n## Launch Investigations\r\n\r\nSoftware is complex and can take significant resources to analyze. Sidekick is equipped and ready for you to launch focused investigations of the binary, where Sidekick guides the analysis, looking for evidences of the topic you want to research.\r\n\r\n![investigations](https://sidekick.binary.ninja/static/images/features-investigations.png?raw=true)\r\n\r\n## Search Effectively\r\n\r\nLooking for something in the binary and not sure where to find it? Sidekick comes with a catalog of powerful scripts that find items you care about. Need something more? Just describe what you want and let Sidekick generate the script for you automatically.\r\n\r\n![indexes](https://sidekick.binary.ninja/static/images/features-indexes.png?raw=true)\r\n\r\n## Visualize Behaviors\r\n\r\nTired of looking at busy, cluttered graphs to understand what the code is doing? Sidekick comes with the Code Insight Map view to help you quickly obtain a top-level understanding of the structure and functionality in the binary. Use this graph-based interface to selectively explore the content of and relationships among a focused set of topics.\r\n\r\n![code insight map](https://sidekick.binary.ninja/static/images/features-code-insight-map.png?raw=true)\r\n# Release Notes\r\n\r\nSidekick Client Revision: 1.0.116\r\n\r\n## Release Changes\r\n\r\n- Improvement: Update major version number to 1.0!\r\n- Improvement: Update backend to improve support for inline commenting",
+    "minimumbinaryninjaversion": 4450,
+    "name": "Sidekick",
+    "packageUrl": "https://plugin.sidekick.binary.ninja/plugins/sidekick-1.0.116.zip",
+    "path": "Vector35_Sidekick",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "updated_at": "2024-05-22 17:28:47.367668+00:00"
+    },
+    "projectUrl": "https://github.com/vector35/sidekick-public",
+    "type": [
+      "helper",
+      "ui"
+    ],
+    "version": "1.0.116"
+  },
+  {
+    "api": [
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {},
+    "description": "Tant\u014d slices functions to help you can understand them faster.",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "MIT",
+      "text": "Copyright (c) 2021-2022 Vector 35 Inc\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "longdescription": "# Tant\u014d\r\nAuthor: **Vector 35, Inc.**\r\n\r\n## Description:\r\nTant\u014d is a plugin for [Binary Ninja](https://binary.ninja/) that slices functions to help you can understand them faster.\r\n\r\n<img align=\"center\" src=\"./tanto_preview.png\">\r\n\r\nFor a more detailed explanation of what Tant\u014d does, please check out [this blog post](https://binary.ninja/2022/06/20/introducing-tanto.html).\r\n\r\n## Minimum Version\r\n\r\nThis plugin requires the following minimum version of Binary Ninja:\r\n\r\n* 3.0.3223\r\n\r\n## License\r\n\r\nThis plugin has been released under the [MIT license](./LICENSE.txt).\r\n\r\n## Metadata Version\r\n\r\n2",
+    "minimumbinaryninjaversion": 3164,
+    "name": "Tant\u014d",
+    "packageUrl": "https://v35.us/unxv9k3",
+    "path": "Vector35_tanto",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "stargazers_count": 0,
+      "updated_at": "2024-05-22 17:28:47.473199+00:00"
+    },
+    "projectUrl": "https://github.com/Vector35/tanto",
+    "type": [
+      "helper",
+      "ui"
+    ],
+    "version": "1.0.1"
+  },
+  {
+    "api": [
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {
+      "pip": "requests\n"
+    },
+    "description": "Automatically analyze a binary via unpac.me",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "MIT",
+      "text": "Copyright (c) 2019 Vector 35 Inc\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "longdescription": "# Unpac.Me Plugin (v1.1)\r\nAuthor: **Vector 35 Inc**\r\n\r\n_Simple plugin to interface Binary Ninja with the UnpacMe automatic unpacking service_\r\n\r\n## Description:\r\n\r\nThis plugin lets you easily submit binaries and download unpacked results from [unpac.me](https://unpac.me/).\r\n\r\nYou will first need to sign up for a free account before you can use it. The first time you try to upload or download you will be prompted for your API Key which is available from your [account page](https://www.unpac.me/account).\r\n\r\nCurrent features:\r\n\r\n- Upload a file to be unpacked. Available from the `Plugins/UnpacMe` menu and command-palette, works on the currently open file.\r\n- Download a previously extracted file. Available from the `Plugins/UnpacMe` menu and command-palette.\r\n\r\n![](https://github.com/Vector35/unpacme/blob/master/media/download.png?raw=true)\r\n![](https://github.com/Vector35/unpacme/blob/master/media/menu.png?raw=true)\r\n\r\n## Installation Instructions\r\n\r\nUse the plugin manager or clone this to your [user plugin folder](https://docs.binary.ninja/getting-started.html#user-folder).\r\n\r\n## Minimum Version\r\n\r\nThis plugin requires the following minimum version of Binary Ninja:\r\n\r\n* 2469\r\n\r\n## Troubleshooting\r\n\r\nIf you receive python errors, you may need to upgrade your version of python to support requests with HTTPS support.\r\n\r\n## License\r\n\r\nThis plugin is released under a MIT license.\r\n\r\n## Metadata Version\r\n\r\n2",
+    "minimumbinaryninjaversion": 3469,
+    "name": "UnPack.Me Automation",
+    "packageUrl": "https://v35.us/po1rbzi",
+    "path": "Vector35_unpacme",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "stargazers_count": 0,
+      "updated_at": "2024-05-22 17:28:47.447920+00:00"
+    },
+    "projectUrl": "https://github.com/Vector35/unpacme",
+    "type": [
+      "ui"
+    ],
+    "version": "1.1"
+  },
+  {
+    "api": [
+      "python2",
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {},
+    "description": "An architecture plugin for 6502 and binary view for NES roms.",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "MIT",
+      "text": "Copyright (c) 2019 Vector 35 Inc\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "longdescription": "An architecture plugin for the <a href='https://en.wikipedia.org/wiki/MOS_Technology_6502'>6502</a> processsor and a binary view for NES roms. <img src='https://raw.githubusercontent.com/Vector35/6502/master/media/nes.png'>",
+    "minimumbinaryninjaversion": 1200,
+    "name": "6502 Architecture Plugin",
+    "packageUrl": "https://v35.us/gbu6gmg",
+    "path": "Vector35_6502",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "stargazers_count": 0,
+      "updated_at": "2024-05-22 17:28:47.496833+00:00"
+    },
+    "projectUrl": "https://github.com/Vector35/6502",
+    "type": [
+      "architecture"
+    ],
+    "version": "2.0.1"
+  },
+  {
+    "api": [
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {},
+    "description": "This is a short description meant to fit on one line.",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "MIT",
+      "text": "Copyright (c) <year> <copyright holders>\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "longdescription": "# Sample Plugin\r\nAuthor: **Vector 35 Inc**\r\n\r\n_This is a short description meant to fit on one line._\r\n\r\n## Description:\r\nThis is a longer description meant for a sample plugin that demonstrates the metadata format for Binary Ninja plugins. Note that the [community-plugins repo](https://github.com/Vector35/community-plugins) contains a useful [utility](https://github.com/Vector35/community-plugins/blob/master/generate_plugininfo.py) to validate the plugin.json. Additionally, the [release helper](https://github.com/Vector35/release_helper) plugin is helpful for more easily pushing new releases, incrementing versions, and creating the appropriate GitHub tags.\r\n\r\nNote that originally we recommended specifying the contents of this entire file inside of the [plugin.json](./plugin.json) but the latest repository generator will use the readme contents directly which means you should simply leave an empty longdescription field. \r\n\r\n## Minimum Version\r\n\r\nThis plugin requires the following minimum version of Binary Ninja:\r\n\r\n * 3000\r\n\r\n## License\r\n\r\nThis plugin is released under an [MIT license](./license).\r\n\r\n## Metadata Version\r\n\r\n2",
+    "minimumbinaryninjaversion": 3000,
+    "name": "Sample Plugin",
+    "packageUrl": "https://v35.us/eutejwp",
+    "path": "Vector35_sample_plugin",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "stargazers_count": 0,
+      "updated_at": "2024-05-22 17:28:47.598279+00:00"
+    },
+    "projectUrl": "https://github.com/Vector35/sample_plugin",
+    "type": [
+      "architecture",
+      "binaryview",
+      "core",
+      "helper",
+      "ui"
+    ],
+    "version": "1.3.5"
+  },
+  {
+    "api": [
+      "python2",
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {
+      "pip": "pygments>=2.7.0\n"
+    },
+    "description": "Powerful code-editing plugin for writing and managing python code-snippets with syntax highlighting, hotkey binding and other features",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "MIT",
+      "text": "Copyright (c) 2019 Vector 35 Inc\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "longdescription": "The snippet editor started as a simple example UI plugin to demonstrate new features available to UI plugins. It has turned into a functionally useful plugin in its own right. The snippet editor allows you to write small bits of code that might not be big enough to warrant the effort of a full plugin but are long enough that you don't want to retype them every time in the python-console!\r\n\r\nAs an added bonus, all snippets are added to the snippets menu and hot-keys can be associated with them as they make use of the action system. All action-system items are also available through the command-palette (CTL/CMD-p).\r\n\r\n![](https://github.com/Vector35/snippets/blob/master/media/snippets.gif?raw=true)\r\n\r\n.",
+    "minimumbinaryninjaversion": 1528,
+    "name": "Snippet UI Plugin",
+    "packageUrl": "https://v35.us/vjnjuhc",
+    "path": "Vector35_snippets",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "stargazers_count": 0,
+      "updated_at": "2024-05-22 17:28:47.548141+00:00"
+    },
+    "projectUrl": "https://github.com/Vector35/snippets",
+    "type": [
+      "ui"
+    ],
+    "version": "1.25"
+  },
+  {
+    "api": [
+      "python2",
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {
+      "pip": "z80dis\n"
+    },
+    "description": "Sample Z80 architecture plugin written to accompany the <a href='https://binary.ninja/2020/01/08/guide-to-architecture-plugins-part1.html'>introductory blog post</a>.",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "MIT",
+      "text": "Copyright (c) 2017 Vector 35 Inc\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "longdescription": "<p>This Z80 architecture plugin was originally written as an example architecture to introduce how to easily add support to Binary Ninja for any new architecture given an existing disassembly library. It originally used the <a href='https://skoolkit.ca/'>SchoolKit</a> python library as a disassembler, but later was updated to work with a <a href='https://github.com/lwerdna/z80dis'>dedicated library</a>.</p><p>This repository has several checkpoints from the <a href='https://binary.ninja/2020/01/08/guide-to-architecture-plugins-part1.html'>blog post</a> that are associated with specific comments.</p>",
+    "minimumbinaryninjaversion": 776,
+    "name": "Z80 Architecture Plugin",
+    "packageUrl": "https://v35.us/1tu1dtg",
+    "path": "Vector35_Z80",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "stargazers_count": 0,
+      "updated_at": "2024-05-22 17:28:47.622721+00:00"
+    },
+    "projectUrl": "https://github.com/Vector35/Z80",
+    "type": [
+      "architecture"
+    ],
+    "version": "1.5"
+  },
+  {
+    "api": [
+      "python2",
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {},
+    "description": "Automatically patch opaque predicates",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "MIT",
+      "text": "Copyright (c) 2017 Vector 35 Inc\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "longdescription": "This script will automatically remove conditional branches which have constant conditions. It can be run from the command line via `python -mOpaquePredicatePatcher.__main__` (if the BinaryNinja python library is in your path) or installed as a plugin in your user plugin directory. Read more about how this tool works on our blog: [Automated Opaque Predicate Removal](https://binary.ninja/2017/10/01/automated-opaque-predicate-removal.html)\r\n\r\n###Example\r\n\r\n![Before and After](opaque_predicate_elimination.gif =400x400 'Before and After')",
+    "minimumbinaryninjaversion": 0,
+    "name": "Opaque Predicate Patcher",
+    "packageUrl": "https://v35.us/2rkokvo",
+    "path": "Vector35_OpaquePredicatePatcher",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "stargazers_count": 0,
+      "updated_at": "2024-05-22 17:28:47.571940+00:00"
+    },
+    "projectUrl": "https://github.com/Vector35/OpaquePredicatePatcher",
+    "type": [
+      "helper"
+    ],
+    "version": "1.1.5"
+  },
+  {
+    "api": [
+      "python2",
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {
+      "pip": "flatbuffers\n"
+    },
+    "description": "Python tools for working with Signature Libraries",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "MIT",
+      "text": "Copyright (c) 2019-2020 Vector 35 Inc\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "longdescription": "This plugin provides Python tools for generating, manipulating, viewing, loading, and saving signature libraries (.sig) for the Signature System. This plugin also provides UI integration for easy access from the Binary Ninja UI to common functions in the `Tools\\Signature Library` menu.\r\n\r\n\r\n![Signature Explorer](https://raw.githubusercontent.com/vector35/sigkit/master/images/explorer.png)\r\n\r\nAlso included are [example scripts](https://github.com/Vector35/sigkit/tree/master/examples) which demonstrate batch processing and automatic creation of signature libraries for Ubuntu libc.\r\nYou can also run the Signature Explorer GUI as a standalone app.",
+    "minimumbinaryninjaversion": 1997,
+    "name": "Signature Kit Plugin",
+    "packageUrl": "https://v35.us/xrqu8dz",
+    "path": "Vector35_sigkit",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "stargazers_count": 0,
+      "updated_at": "2024-05-22 17:28:47.647065+00:00"
+    },
+    "projectUrl": "https://github.com/Vector35/sigkit",
+    "type": [
+      "core",
+      "helper",
+      "ui"
+    ],
+    "version": "1.2.1"
+  },
+  {
+    "api": [
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {},
+    "description": "A Binary Ninja plugin that automatically resolves type information for EFI protocol usage.",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "Apache-2.0",
+      "text": "Copyright 2023 Vector 35 Inc.\r\n\r\nLicensed under the Apache License, Version 2.0 (the \"License\");\r\nyou may not use this file except in compliance with the License.\r\nYou may obtain a copy of the License at\r\n\r\nhttp://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software\r\ndistributed under the License is distributed on an \"AS IS\" BASIS,\r\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\nSee the License for the specific language governing permissions and\r\nlimitations under the License."
+    },
+    "longdescription": "EFI Resolver is a Binary Ninja plugin that automates the task of resolving EFI protocol type information. It propagates pointers to system table, MM system table, boot services, and runtime services to any global variables where they are stored. The plugin also identifies references to the boot services and MM protocol functions and applies type information according to the GUID passed to these functions. The plugin supports the core UEFI specification, but does not support vendor protocols.",
+    "minimumbinaryninjaversion": 4333,
+    "name": "EFI Resolver",
+    "packageUrl": "https://v35.us/xean4mt",
+    "path": "Vector35_efiresolver",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "stargazers_count": 0,
+      "updated_at": "2024-05-22 17:28:47.425196+00:00"
+    },
+    "projectUrl": "https://github.com/Vector35/efi-resolver",
+    "type": [
+      "helper"
+    ],
+    "version": "1.1.0"
+  },
+  {
+    "api": [
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {},
+    "description": "COMpanion is a plugin for Binary Ninja helps automate working with COM objects in Windows binaries.",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "MIT",
+      "text": "Copyright (c) 2024 Vector 35\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "longdescription": "# COMpanion (v0.1.2)\r\nAuthor: **Vector 35 Inc**\r\n\r\n_COMpanion is a plugin for Binary Ninja helps automate working with COM objects in Windows binaries._\r\n\r\n## Description:\r\n\r\n\r\nNone\r\n\r\n## Minimum Version\r\n\r\nThis plugin requires the following minimum version of Binary Ninja:\r\n\r\n* 4860\r\n\r\n\r\n## License\r\n\r\nThis plugin is released under a MIT license.\r\n## Metadata Version\r\n\r\n2",
+    "minimumbinaryninjaversion": 4860,
+    "name": "COMpanion",
+    "packageUrl": "https://v35.us/kl78fv1",
+    "path": "Vector35_COMpanion",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "stargazers_count": 0,
+      "updated_at": "2024-05-22 17:28:47.402171+00:00"
+    },
+    "projectUrl": "https://github.com/Vector35/COMpanion",
+    "type": [
+      "helper"
+    ],
+    "version": "0.1.2"
+  },
+  {
+    "api": [
+      "python3"
+    ],
+    "author": "Vector 35 Inc",
+    "dependencies": {},
+    "description": "Browse hex with a tree view populated from Kaitai Struct formats.",
+    "installinstructions": {},
+    "lastUpdated": 1716398927,
+    "license": {
+      "name": "MIT",
+      "text": "Copyright (c) 2019-2022 Vector 35 Inc\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "longdescription": "This Binary Ninja UI plugin allows you to browse a hex dump within Binary Ninja with a tree view informed by [Kaitai Struct](https://kaitai.io/).\r\n\r\n![](https://github.com/Vector35/kaitai/blob/master/media/kaitai.gif?raw=true)\r\n\r\nThis wires up Kaitai Struct as a parsing library to produce templated dissection of binary files. Of course, this concept itself isn\u2019t new. Plenty of great tools like 010, Hexinator and Synalyze It! have this feature (last two by the same company for different platforms). Thanks to the Kaitai Project not only for the project in general, but also for working with us to resolve some small issues while we were developing the plugin.\r\n\r\n## License\r\n\r\nThis plugin is released under a MIT license.",
+    "minimumbinaryninjaversion": 3164,
+    "name": "Kaitai UI Plugin",
+    "packageUrl": "https://v35.us/ijt5m8d",
+    "path": "Vector35_kaitai",
+    "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "pluginmetadataversion": 2,
+    "projectData": {
+      "stargazers_count": 0,
+      "updated_at": "2024-05-22 17:28:47.522460+00:00"
+    },
+    "projectUrl": "https://github.com/Vector35/kaitai",
+    "type": [
+      "ui"
+    ],
+    "version": "1.1.7"
+  }
+]
